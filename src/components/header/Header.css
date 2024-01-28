@@ -2,6 +2,10 @@
     display: flex; 
     flex-direction:row; 
     justify-content:space-evenly;
-    /* width: 95%; */
     align-items: flex-start;
+}
+
+.header > * {
+    flex-grow: 1;
+    margin: 0 8px; 
 }
