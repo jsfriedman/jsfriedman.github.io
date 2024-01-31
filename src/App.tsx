@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Header buttonOnClickFn={handleHeaderButtonClick} activeSection={activeSection}/>
-      <Body/>
+      <Body activeSection={activeSection}/>
     </>
   )
 }
