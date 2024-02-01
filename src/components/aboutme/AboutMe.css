@@ -1,0 +1,13 @@
+.flexrow {
+    display:flex;
+    flex-direction: row;
+}
+
+.flexrow > * {
+    margin: 16px;
+}
+
+img {
+    width:40%;
+    height:auto;
+}

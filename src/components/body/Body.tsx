@@ -16,7 +16,7 @@ const Body: FC<bodyProps> = ({ activeSection }) => {
                     <img src={birdLogo} width="25%" height="25%"></img>
                 </>
             }
-            {activeSection && <p>{activeSection}</p>}
+            {/* {activeSection && <p>{activeSection}</p>} */}
             {activeSection==='About Me' && <AboutMe/>}
         </div>
     )
