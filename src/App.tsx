@@ -5,7 +5,7 @@ import Header from './components/header/Header';
 
 
 function App() {
-  const [activeSection, setActiveSection] = useState<string>("Home");
+  const [activeSection, setActiveSection] = useState<string>("About Me");
 
   const handleHeaderButtonClick = (section: string) => {
     setActiveSection(section);
