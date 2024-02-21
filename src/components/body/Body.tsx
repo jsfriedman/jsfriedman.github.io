@@ -3,6 +3,8 @@ import birdLogo from '../../assets/bird_transparent.png';
 import './Body.css';
 import AboutMe from "../aboutme/AboutMe";
 import Shelfscan from "../shelfscan/Shelfscan";
+import Hobbies from "../hobbies/Hobbies";
+import Resume from "../resume/Resume";
 
 interface bodyProps {
     activeSection: string;
@@ -11,14 +13,11 @@ interface bodyProps {
 const Body: FC<bodyProps> = ({ activeSection }) => {
     return (
         <div className='centered'>
-            {(activeSection === 'Resume' || activeSection==='Thoughts') &&
-                <>
-                    <h1>Under Construction</h1>
-                    <img src={birdLogo} width="25%" height="25%"></img>
-                </>
-            }
             {activeSection==='About Me' && <AboutMe/>}
-            {activeSection === 'Shelfscan' && <Shelfscan/>}
+            {activeSection==='Resume' && <Resume/>}
+            {activeSection === 'Shelfscan' &&<Shelfscan/>}
+            {activeSection === 'Hobbies' && <Hobbies/>}
+
         </div>
     )
 }

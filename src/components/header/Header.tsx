@@ -12,7 +12,7 @@ const Header: FC<headerProps> = ({buttonOnClickFn, activeSection}) => {
     const button1Label = "About Me";
     const button2Label = "Resume";
     const button3Label = "Projects";
-    const button4Label = "Thoughts";
+    const button4Label = "Hobbies";
 
     return(
         <div className="header">
