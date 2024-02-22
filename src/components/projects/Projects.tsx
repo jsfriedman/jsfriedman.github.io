@@ -13,7 +13,7 @@ const Projects = () => {
     return(
     <>
         <div className="centered-button">
-            <button onClick={() => setDisplayShelfscan(true)} style={{height:'128px', width:'256px', margin:'16px'}}>Selfscan</button>
+            <button onClick={() => setDisplayShelfscan(true)} style={{height:'128px', width:'256px', margin:'16px'}}>Shelfscan</button>
         </div>
     </>
     )}
