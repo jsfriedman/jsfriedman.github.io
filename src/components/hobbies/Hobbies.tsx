@@ -29,18 +29,20 @@ const Hobbies = () => {
 
     return(
     <>
-        <p >My favorite hobby is learning new things, and picking up new hobbies. Over the years 
+        <p style={{width:'75ch'}}>My favorite hobby is learning new things, and picking up new hobbies. Over the years 
             I've learned the essentials of many; I've tried listing as many as I can remember out here. 
             One of my favorite parts of learning new hobbies is being able to connect with people who
             share the hobby, so please feel free to talk to me about any of these! Some of these hobbies 
             stick around in my life for a season, others are more permanent
         </p>
 
-        <ul>
-            {hobbyList.map((item, index)=>(
-                <li key={index}>{item}</li>
-            ))}
-        </ul>
+        <div className="list-container">
+            <ul>
+                {hobbyList.map((item, index)=>(
+                    <li className="list-item" key={index}>{item}</li>
+                ))}
+            </ul>
+        </div>
     </>
     )
 }

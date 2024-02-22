@@ -5,6 +5,7 @@ import AboutMe from "../aboutme/AboutMe";
 import Shelfscan from "../shelfscan/Shelfscan";
 import Hobbies from "../hobbies/Hobbies";
 import Resume from "../resume/Resume";
+import Projects from "../projects/Projects";
 
 interface bodyProps {
     activeSection: string;
@@ -14,10 +15,9 @@ const Body: FC<bodyProps> = ({ activeSection }) => {
     return (
         <div className='centered'>
             {activeSection==='About Me' && <AboutMe/>}
-            {activeSection==='Resume' && <Resume/>}
-            {activeSection === 'Shelfscan' &&<Shelfscan/>}
+            {activeSection==='Resume' && <Resume/>}            
+            {activeSection==='Projects' && <Projects/>}            
             {activeSection === 'Hobbies' && <Hobbies/>}
-
         </div>
     )
 }
