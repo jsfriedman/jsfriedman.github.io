@@ -5,7 +5,9 @@ import './AboutMe.css';
 const AboutMe:FC = () => {
     return(
     <div className="flexrow">
-        <img src={aboutMePic1} style={{borderRadius:'10px'}}></img>
+        <div>
+            <img src={aboutMePic1} style={{borderRadius:'10px'}}></img>
+        </div>
         <div>
             <p>My name is Jonny Friedman, and I'm trying too hard to find exactly the right words to say here so I'm just typing 
                 away in hopes that by typing enough and simply getting started that getting around to exactly what I want to say will be easier.
